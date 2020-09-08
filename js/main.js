@@ -32,12 +32,15 @@ menuCloseBtn.addEventListener('click', () => {
 
 popupTrigger.forEach((item) => {
   item.addEventListener('click', () => {
+    event.preventDefault();
     popupWrap.classList.add('active');
+    document.body.style.overflow = 'hidden';
   })
 })
 
 popupCloseWrap.addEventListener('click', () => {
   popupWrap.classList.remove('active');
+  document.body.style.overflow = 'scroll';
 })
 
 
