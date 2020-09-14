@@ -4,6 +4,7 @@ const navWrap = document.querySelector('.nav__wrap');
 const popupWrap = document.querySelector('.popup__wrap');
 const popupTrigger = document.querySelectorAll('.popup-trigger');
 const popupCloseWrap = document.querySelector('.popup-close__wrap');
+const authorLink = document.getElementById('author-link');
 
 function testWebP(callback) {
   var webP = new Image();
@@ -43,6 +44,10 @@ popupCloseWrap.addEventListener('click', () => {
   document.body.style.overflow = 'auto';
 })
 
+authorLink.addEventListener('click', () => {
+  popupWrap.classList.remove('active');
+  document.body.style.overflow = 'auto';
+})
 
 
 
