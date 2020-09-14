@@ -1407,6 +1407,79 @@ p {
   background-color: #282F35;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 250px;
+  width: 100%;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.footer__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+}
+
+.footer__column:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__column:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__column .footer__link:nth-child(2) {
+  margin: 0 7.5px;
+}
+
+.footer__text {
+  font-size: 16px;
+  color: #848789;
+}
+
+.footer__text_b {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.footer__text_italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 @media (max-width: 1450px) {
   .text-block {
     padding: 70px 30px 50px 30px;
@@ -1440,6 +1513,23 @@ p {
   .shop .inner-items img {
     width: 100px;
     height: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer__column {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+
+  .footer__column:last-child {
+    display: none;
+  }
+
+  .footer__column:nth-child(2) {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
@@ -1539,6 +1629,24 @@ p {
 
   .shop .inner-items a {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer__inner {
+    height: inherit;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .footer__column {
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
   }
 }
 
