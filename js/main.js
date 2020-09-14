@@ -40,7 +40,9 @@ popupTrigger.forEach((item) => {
 
 popupCloseWrap.addEventListener('click', () => {
   popupWrap.classList.remove('active');
-  document.body.style.overflow = 'scroll';
+  document.body.style.overflow = 'auto';
 })
+
+
 
 
