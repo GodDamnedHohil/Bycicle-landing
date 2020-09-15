@@ -5,6 +5,8 @@ const popupWrap = document.querySelector('.popup__wrap');
 const popupTrigger = document.querySelectorAll('.popup-trigger');
 const popupCloseWrap = document.querySelector('.popup-close__wrap');
 const authorLink = document.getElementById('author-link');
+const aboutUs = document.querySelector('.about-us');
+const upBtn = document.querySelector('.up-btn');
 
 function testWebP(callback) {
   var webP = new Image();
@@ -49,5 +51,12 @@ authorLink.addEventListener('click', () => {
   document.body.style.overflow = 'auto';
 })
 
+window.onscroll = () => {
+  if(window.pageYOffset >= aboutUs.offsetTop) {
+    upBtn.classList.add('active');
+  } else {
+    upBtn.classList.remove('active');
+  }
+}
 
 
