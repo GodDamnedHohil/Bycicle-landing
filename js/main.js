@@ -27,10 +27,12 @@ function testWebP(callback) {
 
 menuBtn.addEventListener('click', () => {
   navWrap.classList.add('active');
+  document.body.style.overflow = 'hidden';
 })
 
 menuCloseBtn.addEventListener('click', () => {
   navWrap.classList.remove('active');
+  document.body.style.overflow = 'auto';
 })
 
 popupTrigger.forEach((item) => {

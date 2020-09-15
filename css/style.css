@@ -1641,6 +1641,16 @@ p {
     height: 250px;
   }
 
+  .up-btn {
+    width: 80px;
+    height: 80px;
+  }
+
+  .up-btn img {
+    height: 30px;
+    width: 30px;
+  }
+
   .header__inner {
     padding-top: 100px;
   }
