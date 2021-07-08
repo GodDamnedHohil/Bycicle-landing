@@ -1,1 +1,2 @@
-This is only front-end part of web-site created only for demonstrating my skills of creating adaptive layouts of web-sites.
+## And, what is it?
+It's a simple layout I've created for learning Gulp 4.
